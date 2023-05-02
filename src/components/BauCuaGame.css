@@ -1,0 +1,113 @@
+/* General */
+body {
+    background-color: #890500;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #fab838;
+    text-shadow: 1px 1px 2px red, 0 0 1em black, 0 0 0.2em black;
+    font-size: 6vh;
+  }
+  
+  .BauCuaGame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  
+  #balance-container {
+    margin-bottom: 20px;
+  }
+  
+  #symbols-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+    background-color: #fbb939;
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .symbol {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .selected {
+    border: 5px solid black;
+  }
+  
+  #rolled-symbols {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .rolled-symbol {
+    height: 120px;
+    width: 120px;
+    margin: 10px;
+    object-fit: contain;
+    border: 5px solid #fbb939;
+  }
+  
+  
+  
+  #buttons-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #bet-buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin: 0 10px;
+    font-size: 20px;
+    background-color: #fbb939;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type='number'] {
+    width: 60px;
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  label {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    #symbols-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      max-width: 400px;
+    }
+  
+    .rolled-symbol {
+      height: 50px;
+      width: 50px;
+      margin: 2px;
+    }
+  }
+  
