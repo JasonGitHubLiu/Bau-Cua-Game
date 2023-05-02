@@ -35,7 +35,7 @@ function BauCuaGame() {
         count++;
       }
     }
-    return count * bet;
+    return count * bet * 2; // Multiply winnings by 2 to account for bet amount
   };
 
   const displayWinningsMessage = (winnings) => {
@@ -64,7 +64,7 @@ function BauCuaGame() {
       newBalance += winnings;
       setBalance(newBalance);
       displayWinningsMessage(winnings);
-    }, 500); // Delay for 3 seconds
+    }, 500); // Delay for half a seconds
   };
 
   return (
@@ -92,6 +92,8 @@ function BauCuaGame() {
       </div>
       <br></br>
       <div id="symbols-grid">
+       
+
         {SYMBOLS.map((symbol, index) => (
           <img
             key={index}
